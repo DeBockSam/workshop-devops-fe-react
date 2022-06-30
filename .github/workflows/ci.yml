@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - pipeline*
+
+
+# Steps
+# 1. Make sure dependencies are installed
+#   - Optionally cache dependencies
+# 2. Test and lint the application
+#    - This can be run in parallel
+# 3. If the testing and linting succeeds create production distribution
+# 4. Upload the artifacts
+
+# Create a separate workflow to deploy the app or add CD step here
+
+# Useful actions
+# actions/setup-node@v3
+# actions/checkout@v3
+# actions/setup-node@v3
+# actions/upload-artifact@v3
